@@ -38,13 +38,21 @@ export const menuItems = [
       { label: "Analytics", path: "/dashboard/analytics" },
     ],
   },
-  { label: "Users", path: "/users", icons: user,  activeIcons: active_user},
+  { 
+    label: "Users", 
+    path: "/users", 
+    icons: user,  
+    activeIcons: active_user,
+    submenu: [
+      { label: "Users", path: "/users" },
+      { label: "Admin Management", path: "/users/admin-management" },
+    ],
+  },
   {
     label: "Customers",
     path: "/customers",
     icons: users,
     activeIcons: active_users,
-    // New insertion
     submenu: [
       {
         label: "Account Limit",
@@ -52,8 +60,24 @@ export const menuItems = [
       },
       { label: "Deletion Request", path: "/customers/account_deletion" },
     ],
-    // End of insertion
   },
+  {
+    label: "Notification",
+    path: "/notifications",
+    icons: box,
+    activeIcons: active_box,
+    submenu: [
+      {
+        label: "Push Notification",
+        path: "/notifications/pushNotifications",
+      },
+      {
+        label: "In-app Messages",
+        path: "/notifications/pushMessages",
+      },
+    ]
+  },
+
   { label: "Orders", path: "/orders", icons: bag, activeIcons: active_order },
   {
     label: "Products",
@@ -81,6 +105,60 @@ export const menuItems = [
   { label: "Gift Card", path: "/gift-cards", icons: gift, activeIcons: active_gift },
   { label: "Coupons", path: "/coupons", icons: coupons, activeIcons: active_coupon },,
   { label: "Settings", path: "/settings", icons: settings },
+];
+
+export const permissionTableHeaders = [
+  "Login",
+  "User Name",
+  "Permission",
+  "Action",
+];
+
+export const adminProfileTableHeaders = [
+  "Login",
+  "User Name",
+  "Action",
+];
+
+export const AdminProfileArray = [
+  {
+    email: 'mark.example@gmail.com',
+    name: 'Mr. Mark Jahnson'
+  },
+  {
+    email: 'john.doe@example.com',
+    name: 'Mr. John Doe'
+  },
+  {
+    email: 'jane.smith@example.com',
+    name: 'Ms. Jane Smith'
+  }
+];
+
+export const AccountDeletionArray = [
+  {
+    request: "Account Deletion Request",
+    email: "IOE@gmai.com",
+    UserId: "12345",
+    actionbtn1: "Approve",
+    actionbtn2: "Decline",
+  },
+  {
+    request: "Account Deletion Request",
+    email: "IOE@gmai.com",
+    UserId: "12345",
+    actionbtn1: "Approve",
+    actionbtn2: "Decline",
+   
+  },
+  {
+    request: "Account Deletion Request",
+    email: "IOE@gmai.com",
+    UserId: "12345",
+    actionbtn1: "Approve",
+    actionbtn2: "Remove",
+ 
+  },
 ];
 
 export const usersTableHeaders = [
@@ -425,4 +503,82 @@ export const cmsCards = [
     currency: "Blockchain",
   },
  
+];
+
+export const notificationArray = [
+  {
+    id: "#890221",
+    status: "Active",
+    delivery: "6",
+    open: "0",
+    title: "Product one",
+    msg: "Daily receiving at 9:00 from feb 8 with no ending date",
+    percentage: '0.7', 
+    percentage2: '0.00', 
+  },
+  {
+    id: "#890222",
+    status: "In Active",
+    delivery: "6",
+    open: "6",
+    title: "Product one",
+    msg: "Daily receiving at 9:00 from feb 8 with no ending date",
+    percentage: '0.7', 
+    percentage2: '0.00', 
+
+
+  },
+  {
+    id: "#890221",
+    status: "Active",
+    delivery: "6",
+    open: "0",
+    title: "Product one",
+    msg: "Daily receiving at 9:00 from feb 8 with no ending date", 
+    percentage: '0.7', 
+    percentage2: '0.00', 
+
+
+  },
+  {
+    id: "#890223",
+    status: "Deleted",
+    delivery: "6",
+    open: "0",
+    title: "Product one",
+    msg: "Daily receiving at 9:00 from feb 8 with no ending date",
+    percentage: '0.7', 
+    percentage2: '0.00', 
+
+  },
+  {
+    id: "#890223",
+    status: "In Active",
+    delivery: "6",
+    open: "0",
+    title: "Product one",
+    msg: "Daily receiving at 9:00 from feb 8 with no ending date",
+    percentage: '0.7', 
+    percentage2: '0.00', 
+
+  },
+  {
+    id: "#890224",
+    status: "Archived",
+    delivery: "6",
+    open: "0",
+    title: "Product one",
+    msg: "Daily receiving at 9:00 from feb 8 with no ending date",
+    percentage: '0.7', 
+    percentage2: '0.00', 
+
+  },
+];
+
+export const notificationTableHeaders = [
+  "Status",
+  "Title/Message",
+  "Delivery",
+  "Open",
+  "",
 ];

@@ -1,5 +1,8 @@
-import { AdminHeader, AdminProfileTable, CustomTabs, PermissionTable } from "@/components"
+import AdminHeader from "@/components/Users/AdminHeader";
+import AdminProfileTable from "@/components/Users/AdminProfileTable"
 import { useState } from "react";
+import { CustomTabs } from "@/components";
+import PermissionTable from "@/components/Users/PermissionTable";
 
 const AdminManagement = () => {
     const [tabValue, setTabValue] = useState('adminProfiles');

@@ -3,7 +3,7 @@ import { Tabs as BaseTabs, TabsContent, TabsList, TabsTrigger } from "@/componen
 
 const CustomTabs = ({ tabs, onTabChange }) => {
   return (
-    <BaseTabs defaultValue={tabs[0].value} className="max-w-[400px] mb-12" onValueChange={(value) => onTabChange(value)}>
+    <BaseTabs defaultValue={tabs[0].value} className="max-w-[400px] mb-12 customer" onValueChange={(value) => onTabChange(value)}>
       <TabsList>
         {tabs.map((tab) => (
           <TabsTrigger key={tab.value} value={tab.value}>

@@ -59,3 +59,8 @@ input:checked + .label::before {
   transition: 0.6s;
   cursor: pointer;
 }
+
+.customer a.active{
+  color: #FF9B59;
+  border-bottom: 3px solid #FF9B59;
+}

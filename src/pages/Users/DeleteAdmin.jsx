@@ -1,12 +1,12 @@
 import { DeleteRequest, Title } from '@/components'
-import { UsersBreadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs'
+import { Breadcrumbs } from '@/components'
 
 const DeleteAdmin = () => {
   return (
     <section className='section'>
       <div className='mb-8'>
         <Title>Delete Request</Title>
-        <UsersBreadcrumbs menu={`Users`} subMenu={`Admin Management`} sub={`Delete profile`} />
+        <Breadcrumbs menu="Users" subMenu="Admin Management" nextMenu="Delete profile" />
       </div>
       <DeleteRequest />
     </section>

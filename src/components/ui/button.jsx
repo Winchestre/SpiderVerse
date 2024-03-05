@@ -20,6 +20,10 @@ const buttonVariants = cva(
         grey: "bg-neutral-100 hover:bg-slate-100 hover:text-slate-900 text-zinc-500",
         darkerGrey: "bg-neutral-200 hover:bg-slate-100 hover:text-slate-900 text-zinc-500",
         link: "text-slate-900 underline-offset-4 hover:underline",
+        active: "bg-green-500 text-white hover:bg-green-400",
+        inactive: "bg-red-500 text-white hover:bg-red-400",
+        deleted: "bg-stone-500 text-white hover:bg-stone-400",
+        archived: "bg-yellow-600 text-white hover:bg-yellow-500",
       },
       size: {
         default: "px-[18px] py-3 text-lg",

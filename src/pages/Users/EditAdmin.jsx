@@ -1,12 +1,11 @@
 import { EditAdminForm, Title } from '@/components'
-import { UsersBreadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs'
-
+import { Breadcrumbs } from '@/components'
 const EditAdmin = () => {
   return (
     <section className='section'>
       <div className='mb-8'>
         <Title>Edit Admin Information</Title>
-        <UsersBreadcrumbs menu={`Users`} subMenu={`Admin Management`} sub={`Edit`} />
+        <Breadcrumbs menu="Users" subMenu="Admin Management" nextMenu="Edit" />
       </div>
       <EditAdminForm />
     </section>

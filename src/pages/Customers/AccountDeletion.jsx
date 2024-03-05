@@ -4,7 +4,7 @@ import { accountDeleteTableHeaders, accountUserArray } from "@/constants/data"
 import { TrashIcon } from "@radix-ui/react-icons"
 import { ToggleInput } from "@/components"
 
-const AccountDeletion = ({ data}) => {
+const AccountDeletion = () => {
     return (
         <section className="section">
             <Title>Account Deletion</Title>
