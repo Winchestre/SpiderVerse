@@ -44,11 +44,16 @@ import dark_blog from './dark-blog.svg';
 import reload from './reload.svg';
 import bin from './bin.svg';
 import folder from './folder.svg'
-
+import check from './check-tick.svg'
+import filter from './filter.svg'
+import plus from './arrow-down.svg'
 
 
 
 export {
+    filter,
+    plus,
+    check,
     category,
     user,
     users,

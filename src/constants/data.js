@@ -101,9 +101,12 @@ export const menuItems = [
       { label: "Blockchain Icons", path: "/cms/blockchain-icons" },
     ],
   },
-  { label: "Payment Methods", path: "/payment-methods", icons: vector, activeIcons: active_vector },
   { label: "Gift Card", path: "/gift-cards", icons: gift, activeIcons: active_gift },
+  { label: "Payment Methods", path: "/payment-methods", icons: vector, activeIcons: active_vector },
+  { label: "Reward System", path: "/reward-system", icons: vector, activeIcons: active_vector },
+  { label: "Promotions", path: "/promotions", icons: vector, activeIcons: active_vector },
   { label: "Coupons", path: "/coupons", icons: coupons, activeIcons: active_coupon },,
+  { label: "FX Rates", path: "/fx-rates", icons: coupons, activeIcons: active_coupon },,
   { label: "Settings", path: "/settings", icons: settings },
 ];
 
@@ -653,4 +656,13 @@ export const dashboardCardData = [
     trend: 'falling',
     icons: active_user,
   }
+];
+
+export const deleteRequestTableHeaders = [
+  "Select",
+  "Request",
+  "Email",
+  "User ID",
+  "Action",
+  "",
 ];

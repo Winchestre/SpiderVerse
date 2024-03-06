@@ -24,6 +24,10 @@ import {
   PushMessages,
   PushNotifs,
   Notifications,
+  Rewards,
+  ExcludeProducts,
+  Promotions,
+  FxRates,
 } from './pages';
 import MainLayout from './layout/MainLayout';
 import CreateNotifications from './components/Notification/CreateNotifications';
@@ -71,8 +75,12 @@ export default function App() {
           <Route path="product-reviews" element={<ProductReviews />} />
           <Route path="blockchain-icons" element={<BlockchainIcons />} />
         </Route>
+        <Route path='/reward-system' element={<Rewards />} />
+        <Route path='/reward/exclude-product' element={<ExcludeProducts />} />
         <Route path="/payment-methods" element={<Payments />} />
         <Route path="/gift-cards" element={<GiftCards />} />
+        <Route path="/promotions" element={<Promotions />} />
+        <Route path="/fx-rates" element={<FxRates />} />
       </Routes>
     </MainLayout>
   );

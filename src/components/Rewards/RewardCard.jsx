@@ -1,4 +1,4 @@
-import { card } from '@/assets/images'
+import { cardImage } from '@/assets/images'
 
 const RewardCard = () => {
     return (

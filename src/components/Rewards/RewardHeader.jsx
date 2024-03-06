@@ -1,24 +1,24 @@
 import { Title } from "@/components";
-import { Breadcrumbs } from "@/components";
+import { Button } from "../ui";
+import { useNavigate } from "react-router-dom";
 
 const RewardHeader = () => {
+  const navigate = useNavigate();
   return (
-    <div>
-      <Title>Reward</Title>
-      <Breadcrumbs menu="Reward" subMenu="Exclude Product" />
+    <div className="flex justify-between items-center">
+      <div>
+        <Title>Reward System</Title>
+      </div>
+      <Button
+        onClick={() => {
+          navigate("/reward/exclude-product");
+        }}
+      >
+        Exclude Product
+      </Button>
     </div>
   )
 }
-
-export default CMSHeader
-
-export const ExclueProductHeader = () => {
-  return (
-    <div>
-      <Title>Reward</Title>
-      <Breadcrumbs menu="Reward" subMenu="Exclude Product" />
-    </div>
-  )
-}
+export default RewardHeader
 
 

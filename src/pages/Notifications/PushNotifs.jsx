@@ -42,7 +42,7 @@ const PushNotifs = () => {
         <section className="section">
             <NotificationHeader navigate={navigate} handleTabChange={handleTabChange} />
             <NotificationTable filterNotifications={filterNotifications} />
-            <div className="flex justify-between items-center w-full pt-6">
+            <div className="flex justify-between gap-[50%] items-center w-full text-[#ADADAD] mt-10">
                 <h3 className="font-light text-sm">Showing 1 to <span className="font-semibold">{filterNotifications.length}</span> out of <span className="font-semibold">{notificationArray.length}</span> records</h3>
                 <Pagination>
                     <PaginationContent>

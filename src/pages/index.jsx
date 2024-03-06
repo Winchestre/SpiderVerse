@@ -24,6 +24,10 @@ import Notifications from "./Notifications";
 import PushMessages from "./Notifications/PushMessages";
 import PushNotifs from "./Notifications/PushNotifs";
 import UserInAppMessages from "./Notifications/UserInAppMessages";
+import Rewards from "./Rewards";
+import ExcludeProducts from "./Rewards/ExcludeProducts";
+import Promotions from "./Promotions";
+import FxRates from "./FxRates";
 
 export {
     Dashboard,
@@ -52,4 +56,8 @@ export {
     PushNotifs,
     AdminManagement,
     UserInAppMessages,
+    Rewards,
+    ExcludeProducts,
+    Promotions,
+    FxRates,
 }

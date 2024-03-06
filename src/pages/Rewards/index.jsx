@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { OrdersTable, Title, OrdersHeader } from "@/components"
+import { OrdersTable, Title, OrdersHeader, RewardHeader, RewardSystemForm } from "@/components"
 import { ordersArray } from "@/constants/data"
 import { CustomTabs } from "@/components/custom";
 
-const Reward = () => {
-  const [tabValue, setTabValue] = useState('allOrders');
+const Rewards = () => {
+  // const [tabValue, setTabValue] = useState('allOrders');
 
-  const handleTabChange = (value) => {
-    setTabValue(value);
-  };
+  // const handleTabChange = (value) => {
+  //   setTabValue(value);
+  // };
 
 //   const filteredOrders = ordersArray.filter(order => {
 //     switch (tabValue) {
@@ -27,8 +27,9 @@ const Reward = () => {
 
   return (
     <section className="section">
-      <Title>Website</Title>
-      <CustomTabs
+      <RewardHeader />
+      <RewardSystemForm />
+      {/* <CustomTabs
         tabs={[
           { label: 'Gift Card', value: 'giftCard' },
           { label: 'Mobile Topup', value: 'mobileTopup' },
@@ -37,9 +38,9 @@ const Reward = () => {
         onTabChange={handleTabChange}
       />
       <OrdersHeader />
-      <OrdersTable filteredOrders={filteredOrders} />
+      <OrdersTable filteredOrders={filteredOrders} /> */}
     </section>
   )
 }
 
-export default Reward
+export default Rewards

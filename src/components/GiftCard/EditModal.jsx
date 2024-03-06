@@ -1,4 +1,3 @@
-import { gift_card } from '@/assets/images';
 import EditInput from './EditInput';
 import { useForm } from "react-hook-form";
 import { BookmarkFilledIcon } from "@radix-ui/react-icons";

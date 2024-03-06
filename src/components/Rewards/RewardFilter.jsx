@@ -1,6 +1,8 @@
-import { check, plus, filter } from "@/assets/icons"
+import { check, filter, plus } from "../../assets/icons";
+// import plus from "../../assets/icons";
+// import filter from "../../assets/icons";
 
-const FilterProducts = () => {
+const RewardFilter = () => {
   return (
     <div
       id="sidebar"
@@ -154,4 +156,4 @@ const FilterProducts = () => {
   );
 };
 
-export default FilterProducts;
+export default RewardFilter;
