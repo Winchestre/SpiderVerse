@@ -69,11 +69,11 @@ export const menuItems = [
     submenu: [
       {
         label: "Push Notification",
-        path: "/notifications/pushNotifications",
+        path: "/notifications/push-notifications",
       },
       {
         label: "In-app Messages",
-        path: "/notifications/pushMessages",
+        path: "/notifications/in-app-messages",
       },
     ]
   },
@@ -168,6 +168,15 @@ export const usersTableHeaders = [
   "User Name",
   "Email Address",
   "Country",
+  "User Type",
+];
+
+export const usersNotificationTableHeaders = [
+  "Action",
+  "User ID",
+  "Date",
+  "User Name",
+  "Email Address",
   "User Type",
 ];
 
@@ -581,4 +590,67 @@ export const notificationTableHeaders = [
   "Delivery",
   "Open",
   "",
+];
+
+export const analyticsTableHeaders = [
+  'Product Name',
+  'Category',
+  'Country',
+  'Number of Orders',
+];
+
+export const AnalyticsArray = [
+  {
+    productName: 'Sports',
+    category: 'Gift Cart',
+    country: 'Netherlands',
+    numberOfOrders: 1000,
+  },
+  {
+    productName: 'Product2',
+    category: 'Category2',
+    country: 'Nigeria',
+    numberOfOrders: 2000,
+  },
+  {
+    productName: 'Product3',
+    category: 'Category3',
+    country: 'Algeria',
+    numberOfOrders: 3000,
+  },
+];
+
+export const dashboardCardData = [
+  {
+    metric: 'Total Revenue',
+    value: '$3,000',
+    percentage: '37%',
+    update: 'October 20, 2023',
+    trend: 'rising',
+    icons: active_vector
+  },
+  {
+    metric: 'Total Users',
+    value: '2,300',
+    percentage: '37%',
+    update: 'October 20, 2023',
+    trend: 'falling',
+    icons: active_users
+  },
+  {
+    metric: 'Total Orders',
+    value: '300,000',
+    percentage: '37%',
+    update: 'October 20, 2023',
+    trend: 'rising',
+    icons: active_order
+  },
+  {
+    metric: 'Active Users',
+    value: '1,200',
+    percentage: '16%',
+    update: 'October 20, 2023',
+    trend: 'falling',
+    icons: active_user,
+  }
 ];

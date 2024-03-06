@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import { Products } from './components';
 import {
+  Dashboard,
+  Analytics,
   Users,
   AdminManagement,
   EditAdmin,
@@ -24,11 +26,17 @@ import {
   Notifications,
 } from './pages';
 import MainLayout from './layout/MainLayout';
+import CreateNotifications from './components/Notification/CreateNotifications';
+import UserInAppMessages from './pages/Notifications/UserInAppMessages';
 
 export default function App() {
   return (
     <MainLayout>
       <Routes>
+        <Route path="/dashboard">
+          <Route index element={<Dashboard />} />
+          <Route path="analytics" element={<Analytics />} />
+        </Route>
         <Route path="/users">
           <Route index element={<Users />} />
           <Route path="admin-management">
@@ -47,8 +55,10 @@ export default function App() {
         </Route>
         <Route path="/notifications">
           <Route index element={<Notifications />} />
-          <Route path="pushNotifications" element={<PushNotifs />} />
-          <Route path="pushMessages" element={<PushMessages />} />
+          <Route path="push-notifications" element={<PushNotifs />} />
+          <Route path="in-app-messages" element={<PushMessages />} />
+          <Route path="/notifications/push-notifications/create-notifications" element={<CreateNotifications />} />
+          <Route path='/notifications/push-notifications/users-in-app-messages' element={<UserInAppMessages />} />
         </Route>
         <Route path="/orders" element={<Orders />} />
         <Route path="/products" element={<Products />} />

@@ -1,3 +1,5 @@
+import Dashboard from "./Dashboard";
+import Analytics from "./Dashboard/Analytics";
 import Users from "./Users";
 import Orders from "./Orders";
 import UserEdit from "./Users/UserEdit";
@@ -21,8 +23,11 @@ import AccountLimit from "./Customers/AccountLimit";
 import Notifications from "./Notifications";
 import PushMessages from "./Notifications/PushMessages";
 import PushNotifs from "./Notifications/PushNotifs";
+import UserInAppMessages from "./Notifications/UserInAppMessages";
 
 export {
+    Dashboard,
+    Analytics,
     Users,
     Orders,
     UserEdit,
@@ -46,4 +51,5 @@ export {
     PushMessages,
     PushNotifs,
     AdminManagement,
+    UserInAppMessages,
 }

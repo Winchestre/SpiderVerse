@@ -11,6 +11,7 @@ import {
     PaginationNext,
     PaginationPrevious,
 } from "@/components/ui/pagination";
+import { useNavigate } from "react-router-dom";
 
 const PushNotifs = () => {
     const [tabValue, setTabValue] = useState("all");
@@ -18,6 +19,8 @@ const PushNotifs = () => {
     const handleTabChange = (value) => {
         setTabValue(value);
     };
+
+    const navigate = useNavigate();
 
     const filterNotifications = notificationArray.filter(checkStatus => {
         switch(tabValue) {
@@ -37,7 +40,7 @@ const PushNotifs = () => {
     });
     return (
         <section className="section">
-            <NotificationHeader handleTabChange={handleTabChange} />
+            <NotificationHeader navigate={navigate} handleTabChange={handleTabChange} />
             <NotificationTable filterNotifications={filterNotifications} />
             <div className="flex justify-between items-center w-full pt-6">
                 <h3 className="font-light text-sm">Showing 1 to <span className="font-semibold">{filterNotifications.length}</span> out of <span className="font-semibold">{notificationArray.length}</span> records</h3>
