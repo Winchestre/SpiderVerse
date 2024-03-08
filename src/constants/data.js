@@ -666,3 +666,88 @@ export const deleteRequestTableHeaders = [
   "Action",
   "",
 ];
+
+export const couponTableHeader = [
+  "Code",
+  "Coupon Type",
+  "Coupon Value",
+  "Coupon Limit",
+  "Expiry Date",
+  "Labels",
+  "Actions",
+];
+
+export const couponUserArray = [
+  {
+    code: "c03edj",
+    couponType: "Percentage",
+    couponValue: "10%",
+    couponLimit: "$300-$1000",
+    expiryDate: "Feb 15",
+    labels: 12345,
+  },
+  {
+    code: "c03edj",
+    couponType: "Amount",
+    couponValue: "$20",
+    couponLimit: "$300-$1000",
+    expiryDate: "Feb 15",
+    labels: 12345,
+  },
+  {
+    code: "c03edj",
+    couponType: "Percentage",
+    couponValue: "10%",
+    couponLimit: "$300-$1000",
+    expiryDate: "Feb 15",
+    labels: 12345,
+  },
+  {
+    code: "c03edj",
+    couponType: "Amount",
+    couponValue: "$20",
+    couponLimit: "$300-$1000",
+    expiryDate: "Feb 15",
+    labels: 12345,
+  },
+  {
+    code: "c03edj",
+    couponType: "Percentage",
+    couponValue: "10%",
+    couponLimit: "$300-$1000",
+    expiryDate: "Feb 15",
+    labels: 12345,
+  },
+  {
+    code: "c03edj",
+    couponType: "Amount",
+    couponValue: "$20",
+    couponLimit: "$300-$1000",
+    expiryDate: "Feb 15",
+    labels: 12345,
+  },
+  {
+    code: "c03edj",
+    couponType: "Percentage",
+    couponValue: "10%",
+    couponLimit: "$300-$1000",
+    expiryDate: "Feb 15",
+    labels: 12345,
+  },
+  {
+    code: "c03edj",
+    couponType: "Amount",
+    couponValue: "$20",
+    couponLimit: "$300-$1000",
+    expiryDate: "Feb 15",
+    labels: 12345,
+  },
+  {
+    code: "c03edj",
+    couponType: "Percentage",
+    couponValue: "10%",
+    couponLimit: "$300-$1000",
+    expiryDate: "Feb 15",
+    labels: 12345,
+  },
+];

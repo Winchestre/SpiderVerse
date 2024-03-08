@@ -28,6 +28,7 @@ import Rewards from "./Rewards";
 import ExcludeProducts from "./Rewards/ExcludeProducts";
 import Promotions from "./Promotions";
 import FxRates from "./FxRates";
+import Coupons from "./Coupons";
 
 export {
     Dashboard,
@@ -60,4 +61,5 @@ export {
     ExcludeProducts,
     Promotions,
     FxRates,
+    Coupons,
 }

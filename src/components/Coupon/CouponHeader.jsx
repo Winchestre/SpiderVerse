@@ -1,28 +1,12 @@
-import React from 'react'
-import { search } from "@/assets/icons"
-import { Input, Button } from "@/components/ui"
-import { TextAlignJustifyIcon, PlusIcon } from '@radix-ui/react-icons'
+import Title from "../Title"
+import { Button } from "../ui"
 
-const CouponHeader = () => {
+const CouponHeader = ({ navigate }) => {
     return (
-        <div className='flex items-center my-2'>
-            <Input type="text" icon={search} placeholder="Search" className="border-gray-200 w-[60%]" />
-            <div className='flex items-center ml-auto gap-3'>
-                <Button>
-                    <TextAlignJustifyIcon className="mr-2 h-[18px] w-[18px]" />
-                    Select Pages
-                </Button>
-                <Button>
-                    <TextAlignJustifyIcon className="mr-2 h-[18px] w-[18px]" />
-                    Select All
-                </Button>
-                <Button variant="outline">
-                    <TextAlignJustifyIcon className="mr-2 h-[18px] w-[18px]" />
-                    Deselect All
-                </Button>
-                <Button size="sm">By Country</Button>
-            </div>
-        </div>
+       <div className="flex justify-between items-center pb-10">
+        <Title>Coupons</Title>
+        <Button onClick={()=>{navigate('/coupons/create-coupon')}}>Create New Coupon</Button>
+       </div>
     )
 }
 

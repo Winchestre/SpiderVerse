@@ -32,6 +32,10 @@ import NotificationUsersTable from "./Notification/NotificationUsersTable";
 import RewardHeader from "./Rewards/RewardHeader";
 import RewardSystemForm from "./Orders/RewardSystemForm";
 import RewardFilter from "./Rewards/RewardFilter";
+import CouponHeader from "./Coupon/CouponHeader";
+import CouponTable from "./Coupon/CouponTable";
+import CreateCoupon from "./Coupon/CreateCoupon";
+import CouponForm from "./Coupon/CouponForm";
 
 export {
     Card,
@@ -68,4 +72,8 @@ export {
     RewardHeader,
     RewardSystemForm,
     RewardFilter,
+    CouponHeader,
+    CouponTable,
+    CreateCoupon,
+    CouponForm,
 }

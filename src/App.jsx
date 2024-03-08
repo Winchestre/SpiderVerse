@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Products } from './components';
+import { CreateCoupon, Products } from './components';
 import {
   Dashboard,
   Analytics,
@@ -32,6 +32,7 @@ import {
 import MainLayout from './layout/MainLayout';
 import CreateNotifications from './components/Notification/CreateNotifications';
 import UserInAppMessages from './pages/Notifications/UserInAppMessages';
+import Coupons from './pages/Coupons';
 
 export default function App() {
   return (
@@ -81,6 +82,10 @@ export default function App() {
         <Route path="/gift-cards" element={<GiftCards />} />
         <Route path="/promotions" element={<Promotions />} />
         <Route path="/fx-rates" element={<FxRates />} />
+        <Route path='/coupons'>
+          <Route index element={<Coupons />} />
+          <Route path='/coupons/create-coupon' element={<CreateCoupon />} />
+        </Route>
       </Routes>
     </MainLayout>
   );
