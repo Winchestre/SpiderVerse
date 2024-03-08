@@ -424,7 +424,7 @@ export const blogsArray = [
         author: "Kristin Watson",
         date: "Oct 17, 2023",
         title: "New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange",
-        image: blog,
+        image: blog,   
     },
     {
         author: "John Doe",
@@ -437,7 +437,25 @@ export const blogsArray = [
         date: "Dec 12, 2023",
         title: "Launch of New Cryptocurrency Wallet App",
         image: blog,
-    }
+    },
+    {
+        author: "Alice Smith",
+        date: "Dec 12, 2023",
+        title: "Launch of New Cryptocurrency Wallet App",
+        image: blog,
+    },
+    {
+        author: "Alice Smith",
+        date: "Dec 12, 2023",
+        title: "Launch of New Cryptocurrency Wallet App",
+        image: blog,
+    },
+    {
+        author: "Alice Smith",
+        date: "Dec 12, 2023",
+        title: "Launch of New Cryptocurrency Wallet App",
+        image: blog,
+    },
 ];
 
 export const reviewsArray = [

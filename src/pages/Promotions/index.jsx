@@ -1,8 +1,12 @@
+import { PromotionHeader, PromotionsCards } from "@/components"
+import { PromotionsIcon } from ".."
 
 const Promotions = () => {
     return (
         <section className="section">
-            <h1>Promotions</h1>
+            <PromotionHeader />
+            <PromotionsIcon />
+            <PromotionsCards />
         </section>
     )
 }

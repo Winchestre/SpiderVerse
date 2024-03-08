@@ -27,6 +27,7 @@ import UserInAppMessages from "./Notifications/UserInAppMessages";
 import Rewards from "./Rewards";
 import ExcludeProducts from "./Rewards/ExcludeProducts";
 import Promotions from "./Promotions";
+import PromotionsIcon from "./Promotions/PromotionsIcon";
 import FxRates from "./FxRates";
 import Coupons from "./Coupons";
 
@@ -60,6 +61,7 @@ export {
     Rewards,
     ExcludeProducts,
     Promotions,
+    PromotionsIcon,
     FxRates,
     Coupons,
 }

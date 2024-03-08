@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { CreateCoupon, Products } from './components';
+import { CreateCoupon, CreatePromotion, Products } from './components';
 import {
   Dashboard,
   Analytics,
@@ -80,7 +80,10 @@ export default function App() {
         <Route path='/reward/exclude-product' element={<ExcludeProducts />} />
         <Route path="/payment-methods" element={<Payments />} />
         <Route path="/gift-cards" element={<GiftCards />} />
-        <Route path="/promotions" element={<Promotions />} />
+        <Route path="/promotions">
+          <Route index element={<Promotions />} />
+          <Route path='/promotions/create-promotions' element={<CreatePromotion />} />
+        </Route>
         <Route path="/fx-rates" element={<FxRates />} />
         <Route path='/coupons'>
           <Route index element={<Coupons />} />

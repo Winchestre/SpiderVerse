@@ -36,6 +36,12 @@ import CouponHeader from "./Coupon/CouponHeader";
 import CouponTable from "./Coupon/CouponTable";
 import CreateCoupon from "./Coupon/CreateCoupon";
 import CouponForm from "./Coupon/CouponForm";
+import PromotionHeader from "./Promotions/PromotionHeader";
+import PromotionIconsHeader from "./Promotions/PromotionIconsHeader";
+import PromotionsCards from "./Promotions/PromotionCards";
+import PromotionCard from "./Promotions/PromotionCard";
+import CreatePromotion from "./Promotions/CreatePromotion";
+import CreatePromotionForm from "./Promotions/CreatePromotionForm";
 
 export {
     Card,
@@ -76,4 +82,10 @@ export {
     CouponTable,
     CreateCoupon,
     CouponForm,
+    PromotionHeader,
+    PromotionIconsHeader,
+    PromotionsCards,
+    PromotionCard,
+    CreatePromotion,
+    CreatePromotionForm,
 }
