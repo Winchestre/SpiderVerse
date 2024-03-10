@@ -46,8 +46,8 @@ const NotificationOption = () => {
                     Filter
                 </Button>
             </div>
-            <div className="flex items-center gap-10 mt-10">
-                <Button type="submit" variant="outline" className="w-1/3">
+            <div className="flex items-center gap-10 mt-10 w-2/3">
+                <Button type="submit" variant="outline" className="w-48">
                     Send
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ const NotificationOption = () => {
                         />
                     </svg>
                 </Button>
-                <Button variant="grey" className="w-1/3">
+                <Button variant="grey" className="w-48">
                     Cancel
                 </Button>
             </div> 

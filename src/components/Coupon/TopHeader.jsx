@@ -24,8 +24,8 @@ export const CreateCouponHeader = () => {
 export const EligibleUserHeader = () => {
   return (
     <div>
-      <Title>Coupon</Title>
-      <Breadcrumbs menu="Coupon" subMenu="Eligible Users" />
+      <Title>Users</Title>
+      <Breadcrumbs menu="Coupons" subMenu="Eligible Users" nextMenu='Users'/>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { CreateCoupon, CreatePromotion, Products } from './components';
+import { CreateCoupon, CreatePromotion, EligibleUsers, Products } from './components';
 import {
   Dashboard,
   Analytics,
@@ -33,6 +33,7 @@ import MainLayout from './layout/MainLayout';
 import CreateNotifications from './components/Notification/CreateNotifications';
 import UserInAppMessages from './pages/Notifications/UserInAppMessages';
 import Coupons from './pages/Coupons';
+import EditCoupon from './components/Coupon/EditCoupon';
 
 export default function App() {
   return (
@@ -62,7 +63,7 @@ export default function App() {
           <Route index element={<Notifications />} />
           <Route path="push-notifications" element={<PushNotifs />} />
           <Route path="in-app-messages" element={<PushMessages />} />
-          <Route path="/notifications/push-notifications/create-notifications" element={<CreateNotifications />} />
+          <Route path="/notifications/create-notifications" element={<CreateNotifications />} />
           <Route path='/notifications/push-notifications/users-in-app-messages' element={<UserInAppMessages />} />
         </Route>
         <Route path="/orders" element={<Orders />} />
@@ -88,6 +89,8 @@ export default function App() {
         <Route path='/coupons'>
           <Route index element={<Coupons />} />
           <Route path='/coupons/create-coupon' element={<CreateCoupon />} />
+          <Route path='/coupons/edit-coupon' element={<EditCoupon />} />
+          <Route path='/coupons/eligible-user' element={<EligibleUsers />} />
         </Route>
       </Routes>
     </MainLayout>

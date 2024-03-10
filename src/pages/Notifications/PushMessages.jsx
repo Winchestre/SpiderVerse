@@ -1,8 +1,9 @@
+import { InAppMessages } from "@/components/Notification/NotificationHeader";
 
-const PushMessages = () => {
+const PushMessages = ({ filterNotifications }) => {    
     return (
         <section className="section">
-            <h1>Push Messages</h1>
+            <InAppMessages filterNotifications={filterNotifications}/>     
         </section>
     )
 }

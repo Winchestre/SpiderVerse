@@ -5,7 +5,7 @@ const CreateNotificationsHeader = () => {
     return (
         <>
             <Title>Create Push Notifications</Title>
-            <Breadcrumbs menu="Notifications" subMenu="Push Notifications" nextMenu="Create Push Notification" />
+            <Breadcrumbs menu="Notifications" subMenu="Push Notifications" nextMenu="Create" />
         </>
         
     )

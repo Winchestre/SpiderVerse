@@ -7,11 +7,11 @@ const UsersTable = () => {
 
     return (
         <table className="table-auto w-full border-b border-stone-300 divide-y divide-stone-300 mt-3">
-           <TableHead headers={usersTableHeaders} />
+              <TableHead headers={usersTableHeaders} />
             <tbody className="text-stone-950 divide-y divide-stone-300">
                 {usersArray.map((user, index) => (
                     <tr key={index}>
-                        <td className="px-4 py-2 flex items-center justify-between gap-2 text-left">
+                        <td className="px-4 py-2 flex items-center justify-between gap-1 text-left">
                             <Link className="p-[6px] rounded-lg border border-slate-300" to={`/users/${user.OrderID}/edit`}>
                                 <img src={edit} alt="edit" />
                             </Link>

@@ -2,6 +2,7 @@ import { couponTableHeader, couponUserArray } from "@/constants/data"
 import TableHead from "../TableHead"
 import { edit, bin } from "@/assets/icons"
 import { Button } from "../ui"
+import { Link } from "react-router-dom"
 
 const CouponTable = () => {
     return (
@@ -40,13 +41,15 @@ const CouponTable = () => {
                                             cursor: "pointer",
                                         }}
                                     />
-                                    <img
-                                        src={edit}
-                                        alt="edit"
-                                        style={{
-                                            cursor: "pointer",
-                                        }}
-                                    />
+                                    <Link to={`/coupons/edit-coupon`}>
+                                        <img
+                                            src={edit}
+                                            alt="edit"
+                                            style={{
+                                                cursor: "pointer",
+                                            }}
+                                        />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>

@@ -23,7 +23,7 @@ const buttonVariants = cva(
         active: "bg-green-500 text-white hover:bg-green-400",
         inactive: "bg-red-500 text-white hover:bg-red-400",
         deleted: "bg-stone-500 text-white hover:bg-stone-400",
-        archived: "bg-yellow-600 text-white hover:bg-yellow-500",
+        archived: "bg-orange-400 text-white hover:bg-orange-300",
       },
       size: {
         default: "px-[18px] py-3 text-lg",

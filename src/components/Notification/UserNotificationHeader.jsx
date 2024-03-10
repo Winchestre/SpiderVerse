@@ -14,7 +14,7 @@ const UserNotificationHeader = () => {
     return (
         <>
             <Title>Users</Title>
-            <Breadcrumbs menu="Notifications" subMenu="Push Notifications" nextMenu="Create Push Notification" subNextMenu="User"  />
+            <Breadcrumbs menu="Notifications" subMenu="Push Notifications" nextMenu="Create" subNextMenu="Users"  />
             <div className="flex items-center my-2 pt-3">
                 <Input
                     type="text"
@@ -34,8 +34,13 @@ const UserNotificationHeader = () => {
                         options={["one", "two"]}
                         onSelect={handleSelect}
                     />
-                    <Button variant="grey">Deselect All</Button>
-                    <Button>Country</Button>
+                    <CustomSelect
+                        placeholder="Deselect All"
+                        options={['All']}
+                        onSelect={handleSelect}
+                        className='bg-white text-blue-900 border border-blue-900'
+                    />
+                    <Button className='bg-blue-900'>Country</Button>
                 </div>
             </div>
         </>

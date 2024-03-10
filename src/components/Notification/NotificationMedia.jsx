@@ -2,11 +2,11 @@ import { Input } from "../ui";
 
 const NotificationMedia = () => {
     return (
-        <div className="flex flex-col gap-[8px] pt-5">
+        <div className="flex flex-col gap-[8px] pt-5 w-2/3">
             <h1 className="font-[300] text-[14px]">Rich Notification media</h1>
 
-            <div className="flex justify-between gap-2 items-center">
-                <div className="px-4 py-8 bg-[#F7F7F7] flex justify-center items-center w-[150px] rounded-md">
+            <div className="flex gap-8 items-center">
+                <div className="px-4 py-8 bg-[#F7F7F7] flex justify-center items-center w-[140px] rounded-md">
                     <div className="mx-auto w-2/3 text-center">
                         <label
                             htmlFor="fileInput"
@@ -51,7 +51,7 @@ const NotificationMedia = () => {
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <p className="text-[#A1A1A1] text-xs">Image or GIF url or upload</p>
+                            <p className="text-[#A1A1A1] text-xs italic">Image or GIF url or upload</p>
                         </label>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const NotificationMedia = () => {
                                 fill="#224191"
                             />
                         </svg>
-                        <p className="text-[#A1A1A1] text-xs">Video URL only</p>
+                        <p className="text-[#A1A1A1] text-xs italic">Video URL only</p>
                     </div>
                 </div>
                 <div className="px-4 py-8 bg-[#F7F7F7] flex justify-center items-center w-[150px] rounded-md">
@@ -124,7 +124,7 @@ const NotificationMedia = () => {
                                 fill="#224191"
                             />
                         </svg>
-                        <p className="text-[#A1A1A1] text-xs">audio URL only</p>
+                        <p className="text-[#A1A1A1] text-xs italic">audio URL only</p>
                     </div>
                 </div>
             </div>

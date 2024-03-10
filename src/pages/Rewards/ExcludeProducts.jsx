@@ -12,7 +12,7 @@ const ExcludeProducts = () => {
 
     return (
         <section className="section">
-            <Title>Reward</Title>
+            <Title>Website</Title>
             <Breadcrumbs menu="Reward" subMenu="Exclude Product" />
             <CustomTabs
                 tabs={[

@@ -1,11 +1,10 @@
-import { Breadcrumbs, CouponForm } from ".."
-import Title from "../Title"
+import { CouponForm } from ".."
+import EditCouponHeader from "./TopHeader"
 
 const EditCoupon = () => {
     return (
         <section className="section">
-            <Title>Edit Coupon</Title>
-            <Breadcrumbs menu="Coupon" subMenu="Edit Coupon" />
+           <EditCouponHeader />
             <div className="pt-4">
                 <CouponForm />
             </div>

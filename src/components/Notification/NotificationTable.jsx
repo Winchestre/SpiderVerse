@@ -1,7 +1,7 @@
 import TableHead from "../TableHead";
 import { notificationTableHeaders } from "@/constants/data";
 import { Button } from "../ui";
-import { Archive, LucideDelete } from "lucide-react";
+import { Archive, LucideDelete, Trash2 } from "lucide-react";
 
 const NotificationTable = ({ filterNotifications }) => {
     return (
@@ -38,8 +38,8 @@ const NotificationTable = ({ filterNotifications }) => {
                             </td>
                             <td className="py-2 px-4">
                                 <div className="flex gap-3">
-                                    <Archive className="inline-block text-xs" />
-                                    <LucideDelete className="inline-block text-xs" />
+                                    <Archive className="inline-block text-sm bg-blue-800 text-white p-1 rounded-sm cursor-pointer" />
+                                    <Trash2 className="inline-block text-sm bg-zinc-200 text-blue-800 p-1 rounded-sm cursor-pointer" />
                                 </div>
                             </td>
                         </tr>

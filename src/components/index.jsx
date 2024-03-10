@@ -36,17 +36,23 @@ import CouponHeader from "./Coupon/CouponHeader";
 import CouponTable from "./Coupon/CouponTable";
 import CreateCoupon from "./Coupon/CreateCoupon";
 import CouponForm from "./Coupon/CouponForm";
+import EditCoupon from "./Coupon/EditCoupon";
+import EligibleUsers from "./Coupon/EligibleUsers";
 import PromotionHeader from "./Promotions/PromotionHeader";
 import PromotionIconsHeader from "./Promotions/PromotionIconsHeader";
 import PromotionsCards from "./Promotions/PromotionCards";
 import PromotionCard from "./Promotions/PromotionCard";
 import CreatePromotion from "./Promotions/CreatePromotion";
 import CreatePromotionForm from "./Promotions/CreatePromotionForm";
+import ProductCard from "./ProductCard";
+import ProductCards from "./Product";
 
 export {
     Card,
     Sidebar,
     Products,
+    ProductCards,
+    ProductCard,
     // Commission,
     Title,
     UsersHeader,
@@ -82,10 +88,12 @@ export {
     CouponTable,
     CreateCoupon,
     CouponForm,
+    EditCoupon,
     PromotionHeader,
     PromotionIconsHeader,
     PromotionsCards,
     PromotionCard,
     CreatePromotion,
     CreatePromotionForm,
+    EligibleUsers,
 }

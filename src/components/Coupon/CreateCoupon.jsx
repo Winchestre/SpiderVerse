@@ -1,12 +1,12 @@
 import { Breadcrumbs, CouponForm } from ".."
 import Title from "../Title"
+import { CreateCouponHeader } from "./TopHeader"
 
 const CreateCoupon = () => {
     return (
         <section className="section">
-            <Title>Create Coupon</Title>
-            <Breadcrumbs menu="Coupon" subMenu="Create Coupon" />
-            <div className="pt-4">
+            <CreateCouponHeader />
+            <div className="mt-4">
                 <CouponForm />
             </div>
         </section>
