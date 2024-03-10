@@ -34,6 +34,8 @@ import CreateNotifications from './components/Notification/CreateNotifications';
 import UserInAppMessages from './pages/Notifications/UserInAppMessages';
 import Coupons from './pages/Coupons';
 import EditCoupon from './components/Coupon/EditCoupon';
+import ProductStores from './components/Products/ProductWebsites';
+import ProductWebsites from './components/Products/ProductWebsites';
 
 export default function App() {
   return (
@@ -67,7 +69,10 @@ export default function App() {
           <Route path='/notifications/push-notifications/users-in-app-messages' element={<UserInAppMessages />} />
         </Route>
         <Route path="/orders" element={<Orders />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/products">
+          <Route index element={<Products />} />
+          <Route path='/products/website' element={<ProductWebsites />} />
+        </Route>
         <Route path="/blog">
           <Route index element={<Blog />} />
           <Route path="create" element={<CreateBlog />} />

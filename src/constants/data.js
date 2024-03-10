@@ -451,24 +451,28 @@ export const accountsData = [
     accountBalance: "N 1,300,000",
     updateDate: "October 20, 2023",
     icons: NGR,
+    region: 'Nigeria',
   },
   {
     currency: "EUR",
     accountBalance: "E 1,30,000",
     updateDate: "October 20, 2023",
     icons: EUR,
+    region: 'Europe',
   },
   {
     currency: "GBP",
     accountBalance: "N 1,300,000",
     updateDate: "October 20, 2023",
     icons: GBP,
+    region: 'Britain',
   },
   {
     currency: "USD",
     accountBalance: "$ 1,30,000",
     updateDate: "October 20, 2023",
     icons: USD,
+    region: 'United States',
   },
 ];
 

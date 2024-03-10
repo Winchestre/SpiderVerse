@@ -46,6 +46,8 @@ import CreatePromotion from "./Promotions/CreatePromotion";
 import CreatePromotionForm from "./Promotions/CreatePromotionForm";
 import ProductCard from "./ProductCard";
 import ProductCards from "./Product";
+import ProductWebsites from "./Products/ProductWebsites";
+import ProductBody from "./Products/ProductBody";
 
 export {
     Card,
@@ -53,6 +55,8 @@ export {
     Products,
     ProductCards,
     ProductCard,
+    ProductWebsites,
+    ProductBody,
     // Commission,
     Title,
     UsersHeader,
