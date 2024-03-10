@@ -7,7 +7,7 @@ import { useState } from 'react'
 import US from 'country-flag-icons/react/3x2/US'
 import NG from 'country-flag-icons/react/3x2/NG'
 import FR from 'country-flag-icons/react/3x2/FR'
-import GE from 'country-flag-icons/react/3x2/GE'
+import DE from 'country-flag-icons/react/3x2/DE'
 import ES from 'country-flag-icons/react/3x2/ES'
 
 const RewardIconsHeader = () => {
@@ -61,7 +61,7 @@ const RewardIconsHeader = () => {
                                 <span>France</span>
                             </Button>
                             <Button size="xs" variant="outline3" className="justify-start py-1 px-2 rounded-md flex gap-2">
-                                <GE alt='icons' className='h-[20px] w-[20px]' />
+                                <DE alt='icons' className='h-[20px] w-[20px]' />
                                 <span>Germany</span>
                             </Button>
                             <Button size="xs" variant="outline3" className="justify-start py-1 px-2 rounded-md flex gap-2">

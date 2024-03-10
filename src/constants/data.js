@@ -27,6 +27,37 @@ import {
 } from "../assets/icons";
 import { blog } from "@/assets/images";
 
+export const chartArray = [
+  {
+    labels: 'Mon',
+    value: 80,
+  },
+  {
+    labels: 'Tue',
+    value: 2000,
+  },
+  {
+    labels: 'Wed',
+    value: 5000,
+  },
+  {
+    labels: 'Thur',
+    value: 1000,
+  },
+  {
+    labels: 'Fri',
+    value: 60,
+  },
+  {
+    labels: 'Sat',
+    value: 1800,
+  },
+  {
+    labels: 'Sun',
+    value: 5000,
+  },
+]
+
 export const menuItems = [
   {
     label: "Dashboard",
@@ -172,6 +203,7 @@ export const usersTableHeaders = [
   "Email Address",
   "Country",
   "User Type",
+  'Account',
 ];
 
 export const usersNotificationTableHeaders = [
@@ -291,7 +323,7 @@ export const usersArray = [
     EmailAddress: "kristinwatson@gmail.com",
     Country: "Nigeria",
     UserType: "Verified",
-    AccountType: "NGR",
+    AccountType: NGR,
   },
   {
     OrderID: "890222",
@@ -300,7 +332,7 @@ export const usersArray = [
     EmailAddress: "kristinwatson@gmail.com",
     Country: "Nigeria",
     UserType: "Guest",
-    AccountType: "EUR",
+    AccountType: EUR,
   },
   {
     OrderID: "890223",
@@ -309,7 +341,7 @@ export const usersArray = [
     EmailAddress: "kristinwatson@gmail.com",
     Country: "Nigeria",
     UserType: "Registered",
-    AccountType: "GBP",
+    AccountType: GBP,
   },
   {
     OrderID: "890221",
@@ -318,7 +350,7 @@ export const usersArray = [
     EmailAddress: "kristinwatson@gmail.com",
     Country: "Nigeria",
     UserType: "Verified",
-    AccountType: "NGR",
+    AccountType: NGR,
   },
   {
     OrderID: "890222",
@@ -327,7 +359,7 @@ export const usersArray = [
     EmailAddress: "kristinwatson@gmail.com",
     Country: "Nigeria",
     UserType: "Guest",
-    AccountType: "EUR",
+    AccountType: EUR,
   },
   {
     OrderID: "890223",
@@ -336,7 +368,7 @@ export const usersArray = [
     EmailAddress: "kristinwatson@gmail.com",
     Country: "Nigeria",
     UserType: "Registered",
-    AccountType: "GBP",
+    AccountType: GBP,
   },
   {
     OrderID: "890221",
@@ -345,7 +377,7 @@ export const usersArray = [
     EmailAddress: "kristinwatson@gmail.com",
     Country: "Nigeria",
     UserType: "Verified",
-    AccountType: "NGR",
+    AccountType: NGR,
   },
   {
     OrderID: "890222",
@@ -354,7 +386,7 @@ export const usersArray = [
     EmailAddress: "kristinwatson@gmail.com",
     Country: "Nigeria",
     UserType: "Guest",
-    AccountType: "EUR",
+    AccountType: EUR,
   },
   {
     OrderID: "890223",
@@ -363,7 +395,7 @@ export const usersArray = [
     EmailAddress: "kristinwatson@gmail.com",
     Country: "Nigeria",
     UserType: "Registered",
-    AccountType: "GBP",
+    AccountType: GBP,
   },
 ];
 

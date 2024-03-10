@@ -31,6 +31,9 @@ const StatisticsTable = () => {
                                 {user.UserType}
                             </span>
                         </td>
+                        <td className="px-4 py-2">
+                            <img src={user.AccountType} alt="icon" />
+                        </td>
                     </tr>
                 ))}
             </tbody>
